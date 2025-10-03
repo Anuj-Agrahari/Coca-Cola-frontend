@@ -1,0 +1,254 @@
+ body {
+            font-family: 'Inter', sans-serif;
+             background: linear-gradient(135deg, #fef2f2, #ffffff);
+            overflow-x: hidden;
+        }
+
+        .font-teko {
+            font-family: 'Teko', sans-serif;
+        }
+
+        /* The main can that scrolls and scales */
+        #scrolling-can {
+            position: fixed;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            z-index: 10;
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+          
+        }
+
+        /* Make sections taller to allow for scrolling */
+        .section-spacer {
+            height: 120vh;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        /* Fade in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Animation for the Diet Coke can */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+
+          /* NEW: Header slide down animation */
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        header {
+            animation: slideDown 0.8s ease-out;
+        }
+
+        /* NEW: Hero content slide in animation */
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .hero-content-wrapper {
+             animation: slideInFromLeft 1s 0.2s ease-out forwards;
+             opacity: 0;
+        }
+
+        /* NEW: Nav link hover animation */
+        nav a {
+            position: relative;
+            transition: color 0.3s;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #e53e3e; /* text-red-600 */
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+       
+          /* NEW: Timeline styles */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #e53e3e;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #e53e3e;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* NEW: Timeline animation */
+        .timeline-item {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .timeline-item.left { transform: translateX(-100px); }
+        .timeline-item.right { transform: translateX(100px); }
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        
+        /* NEW: Non-alcoholic section styles */
+        .feature-banner {
+            background-image: linear-gradient(to right,  rgba(249, 115, 22, 0.7), rgba(249, 115, 22, 0.6)), url('https://images.unsplash.com/photo-1622599422138-04f7678e9f24?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .category-card img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .category-card:hover img {
+            transform: scale(1.05);
+        }
+
+          /* NEW: Product filtering styles */
+        .product-filter-btn.active {
+            background-color: #e53e3e;
+            color: white;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            animation: fadeInGrid 0.5s ease-in-out;
+        }
+        @keyframes fadeInGrid {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+         
+        /* NEW: Smoothies section styles */
+        .smoothie-card {
+            background: linear-gradient(145deg, #ffffff, #e6e6e6);
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px #d9d9d9, -10px -10px 30px #ffffff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .smoothie-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 15px 15px 40px #d1d1d1, -15px -15px 40px #ffffff;
+        }
+        
+        /* NEW: Soft-drinks section styles */
+        .soft-drink-card {
+            border-radius: 1.5rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .soft-drink-card:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }

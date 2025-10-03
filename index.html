@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola | Animated Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-stone-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 p-6 bg-white/80 backdrop-blur-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#">
+    <img src="images/Coca-Cola-Symbol.png" alt="Coca-Cola Logo" class="h-12 w-auto">
+</a>
+            <nav class="hidden md:flex items-center space-x-8 font-semibold">
+                <a href="#non-alcoholic-drinks" class="hover:text-red-600 transition-colors">non-alcoholic</a>
+                <a href="#smoothies" class="hover:text-red-600 transition-colors">smoothies</a>
+                <a href="#soft-drinks" class="hover:text-red-600 transition-colors">soft-drinks</a>
+                <a href="#history" class="hover:text-red-600 transition-colors">stories</a>
+            </nav>
+            <button class="px-6 py-2 bg-red-600 text-white font-bold rounded-full hover:bg-red-700 transition-transform hover:scale-105">
+                Contact
+            </button>
+        </div>
+    </header>
+
+    <!-- The scrolling can image -->
+    <img src="https://www.cokestore.com/media/catalog/product/cache/414324e5d60920a67d021665a4b9c162/1/0/100084_1.png" alt="Coca-Cola Can" id="scrolling-can" class="object-contain"
+     onerror="this.onerror=null;this.src='images/bg-remover-coke.png';">
+
+
+    <main class="relative">
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center container mx-auto px-6 relative z-20 section-spacer">
+            <div class="w-full md:w-1/2">
+                <h2 class="font-teko text-9xl md:text-[200px] font-bold leading-none tracking-tighter">COLA</h2>
+                <p class="max-w-md text-lg mt-4 text-gray-600">
+                    This curiously invigorating cola is inspired by traditional colas from yesteryear and made using infusions of the finest herbal ingredients including sweet cinnamon.
+                </p>
+                <div class="my-8 flex items-center space-x-4">
+                    <span class="font-teko text-6xl font-semibold">$280.00</span>
+                </div>
+                <button class="px-12 py-4 bg-red-600 text-white font-bold rounded-full text-xl hover:bg-red-700 transition-transform hover:scale-105 shadow-lg">
+                    Buy Now
+                </button>
+
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div>
+                        <p class="font-bold">INGREDIENTS</p>
+                        <p class="text-gray-600">100% Organic</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">MATERIAL</p>
+                        <p class="text-gray-600">Food Grade</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">FLAVOR</p>
+                        <p class="text-gray-600">9 Variation</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">VOLUME</p>
+                        <p class="text-gray-600">335ml</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/2 hidden md:block relative">
+                 <div class="absolute right-0 top-1/2 -translate-y-1/2 flex items-center space-x-8">
+                     <img src="images/bg-remover-diet3d.png" alt="Diet Coke" class="w-96 h-auto float-animation" onerror="this.onerror=null;this.src='https://placehold.co/256x450/cccccc/000000?text=Diet+Coke';">
+                     <div class="bg-white p-4 rounded-lg shadow-2xl text-center">
+                        <img src="images/bg-remover-coke.png" alt="Coke Mini" class="w-20 h-auto mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/80x140/e52e2f/ffffff?text=Coke';">
+                        <p class="font-bold mt-2">Coke Zero</p>
+                        <p class="text-red-600 font-bold text-lg">$20</p>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-6 py-24 relative z-20 flex items-center">
+            <div class="max-w-xl mx-auto text-center fade-in">
+                <h2 class="text-5xl font-bold">Our Success Stories And Mission</h2>
+                <p class="text-gray-600 mt-6 text-lg">
+                    We're proud of what we create at Coca-Cola, with a long legacy of crafting iconic beverages using a secret recipe and time-honored methods that have been handed down from generation to generation of the Coca-Cola family.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Stats Section -->
+        <section id="stats" class="container mx-auto px-6 py-12 relative z-20 flex items-center justify-center">
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl fade-in">
+                <div class="text-center">
+                    <p class="font-teko text-7xl font-bold text-red-600" data-target="56">0</p>
+                    <p class="text-gray-600 font-semibold">Countries supported</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-teko text-7xl font-bold text-red-600" data-target="122">0</p>
+                    <p class="text-gray-600 font-semibold">International Branches</p>
+                </div>
+                 <div class="text-center">
+                    <p class="font-teko text-7xl font-bold text-red-600" data-target="1000000">0</p>
+                    <p class="text-gray-600 font-semibold">Sales through-out the World</p>
+                </div>
+            </div>
+        </section>
+
+          <!-- NEW: History Timeline Section -->
+        <section id="history" class="py-24 relative z-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-5xl font-bold">A Journey Through Time</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">The rich history of the world's most iconic beverage.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3 class="font-teko text-4xl text-red-600">1886</h3>
+                            <h4 class="font-bold text-xl mb-2">The Beginning</h4>
+                            <p class="text-gray-600">Dr. John S. Pemberton creates the original Coca-Cola syrup in Atlanta, Georgia.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                             <h3 class="font-teko text-4xl text-red-600">1899</h3>
+                            <h4 class="font-bold text-xl mb-2">Bottling Begins</h4>
+                            <p class="text-gray-600">The first bottling rights are sold, making Coca-Cola a portable refreshment.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                             <h3 class="font-teko text-4xl text-red-600">1915</h3>
+                            <h4 class="font-bold text-xl mb-2">Iconic Bottle</h4>
+                            <p class="text-gray-600">The famous contour bottle is designed to be recognizable even in the dark.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                             <h3 class="font-teko text-4xl text-red-600">1985</h3>
+                            <h4 class="font-bold text-xl mb-2">First in Space</h4>
+                            <p class="text-gray-600">Coca-Cola becomes the first soft drink to be consumed in space.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- NEW: Non-Alcoholic Section -->
+        <section id="non-alcoholic-drinks" class="py-24 relative z-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-5xl font-bold">A World of Refreshment</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">Beyond the classic Cola, explore a universe of taste.</p>
+                </div>
+
+                <!-- Featured Drink Banner -->
+                <div class="feature-banner rounded-3xl p-8 md:p-16 text-white mb-20 flex items-center fade-in">
+                     <div class="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
+                        <img src="images/bg-remover-fanta.png" alt="Fanta Can" class="w-48 md:w-64 float-animation" onerror="this.onerror=null;this.src='https://placehold.co/256x256/f97316/ffffff?text=Fanta';">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-6xl font-teko font-bold">FANTA</h3>
+                        <p class="text-xl mt-2 mb-6">Taste the fun, burst into a world of vibrant orange flavor.</p>
+                        <button class="px-8 py-3 bg-white text-orange-500 font-bold rounded-full text-lg hover:bg-gray-100 transition-transform hover:scale-105">Explore Flavors</button>
+                    </div>
+                </div>
+
+                <!-- Drink Categories -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <!-- Category: Sparkling -->
+                    <div class="category-fade-in">
+                        <h3 class="text-2xl font-bold mb-4">Sparkling Soft Drinks</h3>
+                        <div class="space-y-4">
+                            <div class="category-card bg-stone-50 p-4 rounded-xl flex items-center space-x-4 shadow-sm hover:shadow-lg transition-shadow">
+                                <img src="images/bg-remover-coke.png" alt="Coke" class="w-16 h-16 object-contain">
+                                <div><p class="font-semibold">Coca-Cola Classic</p></div>
+                            </div>
+                            <div class="category-card bg-stone-50 p-4 rounded-xl flex items-center space-x-4 shadow-sm hover:shadow-lg transition-shadow">
+                                <img src="images/bg-remover-sprite.png" alt="Sprite" class="w-16 h-16 object-contain">
+                                <div><p class="font-semibold">Sprite</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category: Juices -->
+                     <div class="category-fade-in">
+                        <h3 class="text-2xl font-bold mb-4">Juices & Pulpy Drinks</h3>
+                        <div class="space-y-4">
+                             <div class="category-card bg-stone-50 p-4 rounded-xl flex items-center space-x-4 shadow-sm hover:shadow-lg transition-shadow">
+                                <img src="images/bg-remover-minuteorange.png" alt="Minute Maid" class="w-16 h-16 object-contain">
+                                <div><p class="font-semibold">Minute Maid Orange</p></div>
+                            </div>
+                             <div class="category-card bg-stone-50 p-4 rounded-xl flex items-center space-x-4 shadow-sm hover:shadow-lg transition-shadow">
+                                <img src="images/bg-remover-minuteapple.png" alt="Apple Juice" class="w-16 h-16 object-contain">
+                                <div><p class="font-semibold">Minute Maid Apple</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category: Hydration -->
+                     <div class="category-fade-in">
+                        <h3 class="text-2xl font-bold mb-4">Hydration & Water</h3>
+                        <div class="space-y-4">
+                            <div class="category-card bg-stone-50 p-4 rounded-xl flex items-center space-x-4 shadow-sm hover:shadow-lg transition-shadow">
+                                <img src="images/bg-remover-smartwater.png" alt="Smartwater" class="w-16 h-16 object-contain">
+                                <div><p class="font-semibold">Smartwater</p></div>
+                            </div>
+                            <div class="category-card bg-stone-50 p-4 rounded-xl flex items-center space-x-4 shadow-sm hover:shadow-lg transition-shadow">
+                                <img src="images/bg-remover-dasani.png" alt="Dasani" class="w-16 h-16 object-contain">
+                                <div><p class="font-semibold">Dasani</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category: Mixers -->
+                     <div class="category-fade-in">
+                        <h3 class="text-2xl font-bold mb-4">Mixers & Tonics</h3>
+                        <div class="space-y-4">
+                            <div class="category-card bg-stone-50 p-4 rounded-xl flex items-center space-x-4 shadow-sm hover:shadow-lg transition-shadow">
+                                <img src="images/bg-remover-tonicwater.png" alt="Tonic Water" class="w-16 h-16 object-contain">
+                                <div><p class="font-semibold">Schweppes Tonic</p></div>
+                            </div>
+                            <div class="category-card bg-stone-50 p-4 rounded-xl flex items-center space-x-4 shadow-sm hover:shadow-lg transition-shadow">
+                                <img src="images/bg-remover-ginger.png" alt="Ginger Ale" class="w-16 h-16 object-contain">
+                                <div><p class="font-semibold">Seagram's Ginger Ale</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- NEW: Smoothies Section -->
+        <section id="smoothies" class="py-24 relative z-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-16 fade-in">
+                    <h2 class="text-5xl font-bold">A Taste of Nature's Best</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">Crafted with real fruits and nothing else. Pure, simple, and delicious.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div class="smoothie-card p-8 text-center fade-in">
+                        <img src="images/bg-remover-mangomagic.png" alt="Mango Smoothie" class="w-48 h-48 mx-auto -mt-20 mb-4 rounded-full border-8 border-white">
+                        <h3 class="text-2xl font-bold mb-2">Mango Magic</h3>
+                        <p class="text-gray-600">Mango, Banana, Orange</p>
+                    </div>
+                    <div class="smoothie-card p-8 text-center fade-in">
+                        <img src="https://placehold.co/300x300/f87171/b91c1c?text=Berry+Blast" alt="Berry Smoothie" class="w-48 h-48 mx-auto -mt-20 mb-4 rounded-full border-8 border-white">
+                        <h3 class="text-2xl font-bold mb-2">Berry Blast</h3>
+                        <p class="text-gray-600">Strawberry, Blueberry, Raspberry</p>
+                    </div>
+                     <div class="smoothie-card p-8 text-center fade-in">
+                        <img src="https://placehold.co/300x300/86efac/15803d?text=Green+Goodness" alt="Green Smoothie" class="w-48 h-48 mx-auto -mt-20 mb-4 rounded-full border-8 border-white">
+                        <h3 class="text-2xl font-bold mb-2">Green Goodness</h3>
+                        <p class="text-gray-600">Spinach, Apple, Kiwi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- NEW: Soft Drinks Section -->
+        <section id="soft-drinks" class="py-24 relative z-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-5xl font-bold">The World of Fizzy Fun</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-4">Explore our iconic range of sparkling soft drinks, each with a unique taste.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <div class="soft-drink-card fade-in p-6 bg-red-600 text-white"><img src="images/bg-remover-coke.png" class="mx-auto h-40 mb-4"><h3 class="text-xl font-bold text-center">Coca-Cola</h3></div>
+                    <div class="soft-drink-card fade-in p-6 bg-green-500 text-white"><img src="images/bg-remover-sprite.png" class="mx-auto h-40 mb-4"><h3 class="text-xl font-bold text-center">Sprite</h3></div>
+                    <div class="soft-drink-card fade-in p-6 bg-gray-400 text-white"><img src="images/bg-remover-diet3d.png" class="mx-auto h-40 mb-4"><h3 class="text-xl font-bold text-center">Diet Coke</h3></div>
+                    <div class="soft-drink-card fade-in p-6 bg-orange-500 text-white"><img src="images/bg-remover-fanta.png" class="mx-auto h-40 mb-4"><h3 class="text-xl font-bold text-center">Fanta</h3></div>
+                    <div class="soft-drink-card fade-in p-6 bg-yellow-400 text-gray-800"><img src="images/bg-remover-limca.png" class="mx-auto h-40 mb-4"><h3 class="text-xl font-bold text-center">Limca</h3></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+
+        <section id="products" class="py-24 relative z-20 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <div class="fade-in">
+                    <h2 class="text-5xl font-bold mb-4">Our Popular Products</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+                        Discover our wide range of products that bring comfort and convenience to everyone's life.
+                    </p>
+
+                    <div class="flex justify-center space-x-2 md:space-x-4 mb-12 flex-wrap">
+                        <button class="product-filter-btn px-4 md:px-6 py-2 font-semibold rounded-full mb-2 active" data-target="popular">Popular</button>
+                        <button class="product-filter-btn px-4 md:px-6 py-2 font-semibold rounded-full mb-2" data-target="beers">Beers</button>
+                        <button class="product-filter-btn px-4 md:px-6 py-2 font-semibold rounded-full mb-2" data-target="cokes">Coke's</button>
+                        <button class="product-filter-btn px-4 md:px-6 py-2 font-semibold rounded-full mb-2" data-target="mixers">Tonic Mixers</button>
+                        <button class="product-filter-btn px-4 md:px-6 py-2 font-semibold rounded-full mb-2" data-target="soda">Soda Water</button>
+                        <button class="product-filter-btn px-4 md:px-6 py-2 font-semibold rounded-full mb-2" data-target="alcoholic">Al-cholic</button>
+                    </div>
+                </div>
+
+                <div id="product-grid-container">
+
+                    <!-- Popular Products -->
+                    <div id="popular" class="product-grid">
+                         <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-coke.png" alt="Coke Original" class="h-48 mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/200x200/e52e2f/ffffff?text=Coke';">
+                            <h3 class="font-bold text-xl">Coke Original</h3><p class="text-gray-500">The classic taste</p><div class="text-yellow-400 my-2">★★★★★</div><p class="text-red-600 font-bold text-lg">$25</p>
+                        </div>
+                        <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-diet3d.png" alt="Diet Coke" class="h-48 mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/200x200/cccccc/000000?text=Diet+Coke';">
+                            <h3 class="font-bold text-xl">Diet Coke</h3><p class="text-gray-500">Same taste, zero sugar</p><div class="text-yellow-400 my-2">★★★★★</div><p class="text-red-600 font-bold text-lg">$22</p>
+                        </div>
+                         <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-cherry3d.png" alt="Coke Cherry" class="h-48 mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/200x200/7c0c27/ffffff?text=Cherry';">
+                            <h3 class="font-bold text-xl">Coke Cherry</h3><p class="text-gray-500">A fruity twist</p><div class="text-yellow-400 my-2">★★★★☆</div><p class="text-red-600 font-bold text-lg">$28</p>
+                        </div>
+                         <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-bottel3d.png" alt="Coke Glass Bottle" class="h-48 mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/200x200/e52e2f/ffffff?text=Classic';">
+                            <h3 class="font-bold text-xl">Coke Classic Bottle</h3><p class="text-gray-500">The iconic glass bottle</p><div class="text-yellow-400 my-2">★★★★★</div><p class="text-red-600 font-bold text-lg">$35</p>
+                        </div>
+                    </div>
+
+                    <!-- Beers Products -->
+                    <div id="beers" class="product-grid hidden">
+                        <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/Heineken-Zero.webp" alt="Heineken 0.0" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Heineken 0.0</h3><p class="text-gray-500">Premium non-alcoholic</p><div class="text-yellow-400 my-2">★★★★☆</div><p class="text-red-600 font-bold text-lg">$18</p>
+                        </div>
+                         <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/budweiser.png" alt="Budweiser Zero" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Budweiser Zero</h3><p class="text-gray-500">Zero alcohol, full flavor</p><div class="text-yellow-400 my-2">★★★★☆</div><p class="text-red-600 font-bold text-lg">$17</p>
+                        </div>
+                    </div>
+
+                    <!-- Coke's Products -->
+                    <div id="cokes" class="product-grid hidden">
+                         <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-coke.png" alt="Coke Original" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Coke Original</h3><p class="text-gray-500">The classic taste</p><div class="text-yellow-400 my-2">★★★★★</div><p class="text-red-600 font-bold text-lg">$25</p>
+                        </div>
+                        <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-diet3d.png" alt="Coke Zero" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Coke Zero Sugar</h3><p class="text-gray-500">Real taste, zero sugar</p><div class="text-yellow-400 my-2">★★★★★</div><p class="text-red-600 font-bold text-lg">$23</p>
+                        </div>
+                         <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/coca-cola-vanilla.png" alt="Coke Vanilla" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Coke Vanilla</h3><p class="text-gray-500">Smooth vanilla flavor</p><div class="text-yellow-400 my-2">★★★★☆</div><p class="text-red-600 font-bold text-lg">$28</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Mixers Products -->
+                    <div id="mixers" class="product-grid hidden">
+                        <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-tonicwater.png" alt="Tonic Water" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Schweppes Tonic</h3><p class="text-gray-500">The classic mixer</p><div class="text-yellow-400 my-2">★★★★★</div><p class="text-red-600 font-bold text-lg">$15</p>
+                        </div>
+                        <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-ginger.png" alt="Ginger Ale" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Seagram's Ginger Ale</h3><p class="text-gray-500">Crisp and clean taste</p><div class="text-yellow-400 my-2">★★★★☆</div><p class="text-red-600 font-bold text-lg">$14</p>
+                        </div>
+                    </div>
+
+                     <!-- Soda Products -->
+                    <div id="soda" class="product-grid hidden">
+                         <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/kinley.png" alt="Kinley Soda" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Kinley Soda</h3><p class="text-gray-500">Pure and simple</p><div class="text-yellow-400 my-2">★★★★★</div><p class="text-red-600 font-bold text-lg">$10</p>
+                        </div>
+                        <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-smartwater.png" alt="Smartwater Sparkling" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Smartwater Sparkling</h3><p class="text-gray-500">Vapor distilled purity</p><div class="text-yellow-400 my-2">★★★★☆</div><p class="text-red-600 font-bold text-lg">$12</p>
+                        </div>
+                    </div>
+
+                     <!-- Alcoholic Products -->
+                    <div id="alcoholic" class="product-grid hidden">
+                        <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-jack.webp" alt="Jack & Coke" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Jack & Coke</h3><p class="text-gray-500">Ready-to-drink classic</p><div class="text-yellow-400 my-2">★★★★★</div><p class="text-red-600 font-bold text-lg">$22</p>
+                        </div>
+                        <div class="product-card bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                            <img src="images/bg-remover-Topo.webp" alt="Topo Chico Hard Seltzer" class="h-48 mx-auto mb-4">
+                            <h3 class="font-bold text-xl">Topo Chico Hard Seltzer</h3><p class="text-gray-500">Spiked sparkling water</p><div class="text-yellow-400 my-2">★★★★☆</div><p class="text-red-600 font-bold text-lg">$19</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold">Coca-Cola</h2>
+            <p class="mt-4">Taste the Feeling</p>
+            <div class="flex justify-center space-x-6 mt-6">
+                <a href="#" class="hover:text-red-500">Facebook</a>
+                <a href="#" class="hover:text-red-500">Twitter</a>
+                <a href="#" class="hover:text-red-500">Instagram</a>
+            </div>
+            <p class="mt-8 text-gray-500">&copy; 2025 The Coca-Cola Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+   <script src="app.js"></script>
+
+</body>
+</html>
