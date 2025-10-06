@@ -44,7 +44,7 @@
 
 
 
-         // NEW: Intersection Observer for staggered product card animation
+         //  Intersection Observer for staggered product card animation
         const productCards = document.querySelectorAll('.product-card');
         const productCardObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry, index) => {
@@ -66,7 +66,7 @@
         });
 
 
-         // NEW: Timeline Observer
+         //  Timeline Observer
         const timelineItems = document.querySelectorAll('.timeline-item');
         const timelineObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
@@ -78,7 +78,7 @@
         }, { threshold: 0.2 });
         timelineItems.forEach(item => timelineObserver.observe(item));
 
-          // NEW: Non-alcoholic categories observer
+          //  Non-alcoholic categories observer
         const categoryFaders = document.querySelectorAll('.category-fade-in');
         const categoryObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry, index) => {
@@ -133,7 +133,7 @@
 
         counterObserver.observe(statsSection);
 
-         // NEW: Product filtering logic
+         //  Product filtering logic
         const filterButtons = document.querySelectorAll('.product-filter-btn');
         const productGrids = document.querySelectorAll('.product-grid');
 
@@ -162,3 +162,56 @@
                 });
             });
         });
+
+        // NEW: Contact Modal Logic
+            const contactBtn = document.getElementById('contact-btn');
+            const contactModal = document.getElementById('contact-modal');
+            const modalContent = document.getElementById('contact-modal-content');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const contactForm = document.getElementById('contact-form');
+            const formContainer = document.getElementById('form-container');
+            const thankYouMessage = document.getElementById('thank-you-message');
+
+            const openModal = () => {
+                if(!contactModal || !modalContent) return;
+                contactModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+                setTimeout(() => {
+                    modalContent.classList.remove('scale-95', 'opacity-0');
+                    modalContent.classList.add('scale-100', 'opacity-100');
+                }, 10);
+            };
+
+            const closeModal = () => {
+                if(!contactModal || !modalContent) return;
+                modalContent.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    contactModal.classList.add('hidden');
+                    document.body.style.overflow = '';
+                    // Reset form for next time
+                    if (formContainer && thankYouMessage) {
+                        formContainer.classList.remove('hidden');
+                        thankYouMessage.classList.add('hidden');
+                        contactForm.reset();
+                    }
+                }, 300);
+            };
+
+            if (contactBtn) contactBtn.addEventListener('click', openModal);
+            if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+            if (contactModal) contactModal.addEventListener('click', (e) => {
+                if (e.target === contactModal) closeModal();
+            });
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    if (formContainer && thankYouMessage) {
+                       formContainer.classList.add('hidden');
+                       thankYouMessage.classList.remove('hidden');
+                    }
+                });
+            }
+
+       
+    

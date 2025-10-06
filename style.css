@@ -72,7 +72,7 @@
             animation: slideDown 0.8s ease-out;
         }
 
-        /* NEW: Hero content slide in animation */
+        /*  Hero content slide in animation */
         @keyframes slideInFromLeft {
             from {
                 opacity: 0;
@@ -88,7 +88,7 @@
              opacity: 0;
         }
 
-        /* NEW: Nav link hover animation */
+        /*  Nav link hover animation */
         nav a {
             position: relative;
             transition: color 0.3s;
@@ -110,7 +110,7 @@
             transform-origin: bottom left;
         }
        
-          /* NEW: Timeline styles */
+          /*  Timeline styles */
         .timeline {
             position: relative;
             max-width: 1000px;
@@ -186,7 +186,7 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         
-        /* NEW: Timeline animation */
+        /* Timeline animation */
         .timeline-item {
             opacity: 0;
             transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -199,7 +199,7 @@
         }
 
         
-        /* NEW: Non-alcoholic section styles */
+        /* Non-alcoholic section styles */
         .feature-banner {
             background-image: linear-gradient(to right,  rgba(249, 115, 22, 0.7), rgba(249, 115, 22, 0.6)), url('https://images.unsplash.com/photo-1622599422138-04f7678e9f24?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
@@ -213,7 +213,7 @@
             transform: scale(1.05);
         }
 
-          /* NEW: Product filtering styles */
+          /*  Product filtering styles */
         .product-filter-btn.active {
             background-color: #e53e3e;
             color: white;
@@ -231,7 +231,7 @@
 
 
          
-        /* NEW: Smoothies section styles */
+        /*  Smoothies section styles */
         .smoothie-card {
             background: linear-gradient(145deg, #ffffff, #e6e6e6);
             border-radius: 20px;
@@ -243,7 +243,7 @@
             box-shadow: 15px 15px 40px #d1d1d1, -15px -15px 40px #ffffff;
         }
         
-        /* NEW: Soft-drinks section styles */
+        /* Soft-drinks section styles */
         .soft-drink-card {
             border-radius: 1.5rem;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -251,4 +251,13 @@
         .soft-drink-card:hover {
             transform: scale(1.05) rotate(2deg);
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+
+          /* Contact Modal Styles */
+        #contact-modal {
+            transition: opacity 0.3s ease-in-out;
+        }
+        #contact-modal-content {
+            transition: transform 0.3s ease-in-out;
         }
